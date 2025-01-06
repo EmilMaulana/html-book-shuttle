@@ -16,16 +16,22 @@
 <body class="bg-bg-body font-poppins">
     <div class="w-full h-screen flex flex-col items-center">
         <div class="bg-bg-container max-w-[430px]">
-            <div class="fixed top-0 z-20 bg-bg-container w-[430px] h-[50px] border flex items-center justify-center">
-                <h1>Logo Here</h1>
+            <div class="fixed top-0 z-20 bg-bg-container w-[430px] h-[50px] flex items-center justify-center">
+                <img src="images/logo.png" alt="" width="113px">
             </div>
 
             <div
-                class="relative top-0 left-0 right-0 w-[430px] h-fit border flex items-center justify-center mt-[50px]">
-                <img src="https://placehold.co/430x267/e33320/f1b10f?text=carousel+here" alt="">
+                class="relative top-0 left-0 right-0 w-[430px] h-fit flex items-center justify-center mt-[50px]">
+                <!-- Carousel Container -->
+                <div class="relative w-full max-w-[430px] m-auto overflow-hidden carousel-container">
+                    <img id="carousel-image" src="images/slider1.png" alt="Slide 1" class="w-full h-auto carousel-image">
+                    <!-- Navigation Buttons -->
+                    <button id="prev" class="absolute top-1/2 -translate-y-1/2 w-7 h-7 left-[10px] text-bg-container bg-[#fff] bg-opacity-10 hover:bg-carousel-hover-button rounded-full carousel-button prev">&#10094;</button>
+                    <button id="next" class="absolute top-1/2 -translate-y-1/2 w-7 h-7 right-[10px] text-bg-container bg-[#fff] bg-opacity-10 hover:bg-carousel-hover-button rounded-full carousel-button next">&#10095;</button>
+                </div>
 
                 <div
-                    class="absolute -bottom-8 z-0 h-fit w-[90%] px-3 py-2 rounded-xl bg-bg-container border flex justify-between items-center gap-2 shadow-md">
+                    class="absolute -bottom-8 z-0 h-fit w-[90%] px-3 py-2 rounded-xl bg-bg-container flex justify-between items-center gap-2 shadow-md">
                     <div class="flex flex-col text-[#e33320]">
                         <div class="flex gap-2 items-center">
                             <i class="fa-regular fa-id-card"></i>
@@ -91,51 +97,57 @@
             <div class="mt-8 flex flex-col justify-center items-center">
                 <h3 class="text-xl font-semibold">Our Partnership</h3>
                 <div class="flex items-center justify-center gap-2 mt-3 pb-10">
-                    <div class="w-[70px] h-[40px] border flex justify-center items-center bg-grey">img</div>
-                    <div class="w-[70px] h-[40px] border flex justify-center items-center bg-grey">img</div>
-                    <div class="w-[70px] h-[40px] border flex justify-center items-center bg-grey">img</div>
-                    <div class="w-[70px] h-[40px] border flex justify-center items-center bg-grey">img</div>
-                    <div class="w-[70px] h-[40px] border flex justify-center items-center bg-grey">img</div>
+                    <div class="w-[70px] h-[40px] flex justify-center items-center bg-grey">img</div>
+                    <div class="w-[70px] h-[40px] flex justify-center items-center bg-grey">img</div>
+                    <div class="w-[70px] h-[40px] flex justify-center items-center bg-grey">img</div>
+                    <div class="w-[70px] h-[40px] flex justify-center items-center bg-grey">img</div>
+                    <div class="w-[70px] h-[40px] flex justify-center items-center bg-grey">img</div>
                 </div>
             </div>
 
-            <div class="text-center border-t-2 mb-[62px]">
+            <div class="text-center border-t-2 border-grey mb-[62px]">
                 <small>&copy PT. Bhineka Sangkuriang Transport</small>
             </div>
 
-            <div class="fixed bottom-0 bg-bg-container w-[430px] h-[62px] border-2 rounded-t-lg flex items-center justify-center">
+            <div
+                class="fixed bottom-0 bg-bg-container w-[430px] h-[62px] border-t-2 border-grey rounded-t-lg flex items-center justify-center">
                 <div class="flex items-center justify-center">
 
                     <a href="#">
-                        <div class="w-[86px] h-[40px] flex flex-col justify-center items-center hover:text-[#e33320] ease-out duration-500">
+                        <div
+                            class="w-[86px] h-[40px] flex flex-col justify-center items-center hover:text-[#e33320] ease-out duration-500">
                             <i class="fa-solid fa-house text-xl"></i>
                             <small class="text-xs">Beranda</small>
                         </div>
                     </a>
 
                     <a href="#">
-                        <div class="w-[86px] h-[40px] flex flex-col justify-center items-center hover:text-[#e33320] ease-out duration-500 ">
+                        <div
+                            class="w-[86px] h-[40px] flex flex-col justify-center items-center hover:text-[#e33320] ease-out duration-500 ">
                             <i class="fa-solid fa-ticket text-xl"></i>
                             <small class="text-xs">Pesanan</small>
                         </div>
                     </a>
 
                     <a href="#">
-                        <div class="w-[86px] h-[40px] flex flex-col justify-center items-center hover:text-[#e33320] ease-out duration-500 ">
+                        <div
+                            class="w-[86px] h-[40px] flex flex-col justify-center items-center hover:text-[#e33320] ease-out duration-500 ">
                             <i class="fa-solid fa-house"></i>
                             <small class="text-xs">Beranda</small>
                         </div>
                     </a>
 
                     <a href="#">
-                        <div class="w-[86px] h-[40px] flex flex-col justify-center items-center hover:text-[#e33320] ease-out duration-500 ">
+                        <div
+                            class="w-[86px] h-[40px] flex flex-col justify-center items-center hover:text-[#e33320] ease-out duration-500 ">
                             <i class="fa-solid fa-envelope text-xl"></i>
                             <small class="text-xs">Inbox</small>
                         </div>
                     </a>
 
                     <a href="#">
-                        <div class="w-[86px] h-[40px] flex flex-col justify-center items-center hover:text-[#e33320] ease-out duration-500 ">
+                        <div
+                            class="w-[86px] h-[40px] flex flex-col justify-center items-center hover:text-[#e33320] ease-out duration-500 ">
                             <i class="fa-solid fa-user-large text-xl"></i>
                             <small class="text-xs">Akun Saya</small>
                         </div>
@@ -144,79 +156,47 @@
             </div>
         </div>
     </div>
+    <script>
+        // Array berisi sumber gambar
+        const images = [
+            "images/slider1.png",
+            "images/slider2.png",
+            "images/slider3.png",
+            "images/slider4.png",
+            "images/slider5.png"
+        ];
+
+        let currentIndex = 0; // Indeks gambar saat ini
+
+        // Ambil elemen gambar dan tombol navigasi
+        const carouselImage = document.getElementById("carousel-image");
+        const prevButton = document.getElementById("prev");
+        const nextButton = document.getElementById("next");
+
+        // Fungsi untuk memperbarui gambar
+        function updateImage() {
+            carouselImage.src = images[currentIndex];
+        }
+
+        // Event listener untuk tombol Previous
+        prevButton.addEventListener("click", () => {
+            currentIndex = (currentIndex - 1 + images.length) % images.length; // Pindah ke gambar sebelumnya
+            updateImage();
+        });
+
+        // Event listener untuk tombol Next
+        nextButton.addEventListener("click", () => {
+            currentIndex = (currentIndex + 1) % images.length; // Pindah ke gambar berikutnya
+            updateImage();
+        });
+
+        // Optional: Auto-slide setiap 5 detik
+        setInterval(() => {
+            currentIndex = (currentIndex + 1) % images.length;
+            updateImage();
+        }, 5000);
+    </script>
     <script src="https://kit.fontawesome.com/64d7024487.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
-
-<!-- <div class="w-full h-screen flex justify-center items-center">
-
-    <div class="bg-bg-container max-w-[430px] h-full flex flex-col border">
-        <div class="h-[50px] w-[430px] fixed top-0 border bg-bg-container flex items-center justify-center">
-            Logo Here
-        </div>
-
-        <div class="w-full overflow-hidden relative flex h-[267px] mt-[50px]">
-            <div class="carousel-wrapper transition-transform duration-1000 ease-in-out flex w-full">
-                <div class="carousel-item transition-opacity duration-1000 ease-in-out min-w-full active">
-                    <img src="https://placehold.co/430x267/e33320/f1b10f?text=Slide+1" alt="Slide 1" class="w-full">
-                </div>
-                <div class="carousel-item transition-opacity duration-1000 ease-in-out min-w-full">
-                    <img src="https://placehold.co/430x267/e33320/f1b10f?text=Slide+2" alt="Slide 2" class="w-full">
-                </div>
-                <div class="carousel-item transition-opacity duration-1000 ease-in-out min-w-full">
-                    <img src="https://placehold.co/430x267/e33320/f1b10f?text=Slide+3" alt="Slide 3" class="w-full">
-                </div>
-            </div>
-
-            <div class="absolute top-40 right-9 flex gap-2 ">
-                <button onclick="prevSlide()"
-                    class="transform bg-[#fff] bg-opacity-20 rounded-full w-6 h-6 shadow-lg hover:bg-carousel-hover-button text-[#fff] hover:text-[#000]"><i
-                        class="fa-solid fa-angle-left"></i></button>
-                <button onclick="nextSlide()"
-                    class="transform bg-[#fff] bg-opacity-20 rounded-full w-6 h-6 shadow-lg hover:bg-carousel-hover-button text-[#fff] hover:text-[#000]"><i
-                        class="fa-solid fa-angle-right"></i></button>
-            </div>
-
-            <div
-                class="absolute -bottom-10 z-50 w-[90%] h-fit bg-bg-container shadow-lg rounded-lg flex flex-col items-center justify-center p-4 mx-5">
-                <div class="flex flex-col justify-between">
-                    <div class="flex gap-2 items-center">
-                        <i class="fa-regular fa-id-card"></i>
-                        <h1 class="text-lg font-semibold">Daftar Membership sekarang!</h1>
-                    </div>
-
-                    <p>Dapatkan berbagai promo voucher diskon, cukup menggunakan akun Gmail kamu.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="h-[50px] w-[430px] fixed bottom-0 border bg-bg-container flex items-center justify-center z-10">
-            Logo Here
-        </div>
-    </div>
-</div>
-<script>
-    let currentIndex = 0;
-    const items = document.querySelectorAll('.carousel-item');
-    const wrapper = document.querySelector('.carousel-wrapper');
-
-    function showSlide(index) {
-        // Menggeser carousel
-        const offset = -index * 100; // Menghitung offset berdasarkan indeks
-        wrapper.style.transform = `translateX(${offset}%)`;
-    }
-
-    function nextSlide() {
-        currentIndex = (currentIndex + 1) % items.length;
-        showSlide(currentIndex);
-    }
-
-    function prevSlide() {
-        currentIndex = (currentIndex - 1 + items.length) % items.length;
-        showSlide(currentIndex);
-    }
-
-    // Auto slide
-    setInterval(nextSlide, 15000); // Ganti slide setiap 15 detik
-</script> -->

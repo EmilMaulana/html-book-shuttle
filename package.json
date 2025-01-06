@@ -11,8 +11,5 @@
   "license": "ISC",
   "devDependencies": {
     "tailwindcss": "^3.4.17"
-  },
-  "dependencies": {
-    "flowbite": "^2.5.2"
   }
 }
